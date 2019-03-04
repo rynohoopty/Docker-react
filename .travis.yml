@@ -3,6 +3,7 @@ services:
   - docker
 
 before_install:
+  - chmod +x build.sh
   - docker build -t rynohoopty/docker-react -f Dockerfile.dev .
 
 script:
